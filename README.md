@@ -1,4 +1,4 @@
-# buddycloud-angular-org
+# buddycloud-angular-app
 
 install
 
