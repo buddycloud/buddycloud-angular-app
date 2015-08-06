@@ -1,0 +1,51 @@
+.nodelist{
+  width: 100%;
+  position:relative;
+  font-size:12px;
+  margin:4px;
+  cursor:pointer;
+
+  .avatar{
+    width:16px;
+    height:16px;
+  }
+  .item{
+        position:absolute;
+        text-decoration:none;
+        left:20px; 
+        right:20px; 
+        top:0px; 
+        white-space: nowrap;
+        color:#333;
+        overflow: hidden;
+        text-overflow: ellipsis; // This is where the magic happens
+   }
+   &.active{
+        .item{
+            color:#2DAEBF;
+        }
+   }
+    &:hover .item { color:#2DAEBF; }
+   .counter{
+    position:absolute;
+    right:0px;
+    top:0px;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .nodelist {
+     padding-bottom: 20px;
+    
+      .avatar{
+        width:32px;
+        height:32px;
+      }
+      .item{
+        left:40px;
+        font-size:17px;
+      }
+   }
+ }
+
+

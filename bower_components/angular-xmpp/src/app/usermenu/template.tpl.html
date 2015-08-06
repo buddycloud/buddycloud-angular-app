@@ -1,0 +1,25 @@
+<!--
+Bootstrap navigation dropdown
+-->
+<a ng-if="!xmpp.data.me || xmpp.data.anonymous"  ng-href class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Login <span class="caret"></span></a>
+<a  ng-if="xmpp.data.me && !xmpp.data.anonymous" ng-href class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="text-align:right">
+    <span class="hidden-xs">{{xmpp.data.me.jid.user}}</span>
+    <div class="avatar" style="margin:-5px;width:36px;margin-right:4px;margin-left:5px;display:inline-block" avatar="xmpp.data.me.jid"></div>
+    <span class="caret"></span>
+</a>
+
+
+
+
+<div class="dropdown-menu ">
+    <xmpplogin ng-show="!xmpp.data.me.jid || xmpp.data.anonymous"  defaultdomain="defaultdomain"></xmpplogin>
+    <ul   ng-show="xmpp.data.me.jid && !xmpp.data.anonymous">
+        <li ng-click="$parent.$parent.page='settings'"><a>Settings</a></li>
+        <!-- ugly $parent.$parent-->
+        <li ng-click="$parent.$parent.page='about'"><a ng-href>About {{page}}</a></li>
+        <li class="divider"></li>
+        <li ng-click="logout()"><a ng-href>logout</a></li>
+    </ul>
+</div>
+
+

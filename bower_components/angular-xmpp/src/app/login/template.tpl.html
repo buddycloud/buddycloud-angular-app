@@ -1,0 +1,67 @@
+
+<form ng-if="!xmpp.model.me || xmpp.model.anonymous==true"  class="form-horizontal" style="width:300px;display:inline-block;padding:5px;color:black" ng-submit="login(user)">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-3 control-label">Jid</label>
+    <div class="col-sm-9">
+      <input type="text" ng-model="user.jid" class="form-control" id="inputEmail3" placeholder="xy@laos.buddycloud.com" required="required">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+    <div class="col-sm-9">
+      <input type="password" ng-model="user.password" class="form-control" id="inputPassword3" placeholder="Password" required="required">
+    </div>
+  </div>
+  <div class="form-group" ng-show="user.signup">
+    <label for="inputPassword3" class="col-sm-3 control-label">Retype</label>
+    <div class="col-sm-9">
+      <input type="password" ng-model="user.password2" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group" ng-show="user.signup">
+    <label for="inputE3" class="col-sm-3 control-label">email</label>
+    <div class="col-sm-9">
+      <input type="email" ng-model="user.email" class="form-control" id="inputE3" placeholder="Email">
+    </div>
+  </div>
+ 
+  <div class="form-group"  ng-show="!user.signup">
+    <div class="col-sm-offset-3 col-sm-9">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="user.remember"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group" ng-show="!user.signup">
+    <div class="col-sm-offset-3 col-sm-9">
+      <input type="submit" class="btn btn-default" value="Sign in"/>
+      <button type="button"  class="btn btn-default" ng-click="user.signup=true">Sign up</button>
+    </div>
+  </div>
+  <div class="form-group" ng-show="user.signup">
+    <div class="col-sm-offset-3 col-sm-9">
+      <input type="submit" class="btn btn-default" value="register"/>
+    </div>
+  </div>
+
+<div class="alert alert-danger" ng-if="error" >
+<span  class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+{{error}}
+</div>
+
+
+
+<div class="alert alert-danger" ng-if="xmpp.model.errors[0]">
+<span  class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+{{xmpp.data.errors[0].description}}
+</div>
+
+
+</form>
+
+<ul ng-if="xmpp.model.me && xmpp.model.anonymous==false">
+<li ng-click="logout()">logout</li>
+</ul>
+

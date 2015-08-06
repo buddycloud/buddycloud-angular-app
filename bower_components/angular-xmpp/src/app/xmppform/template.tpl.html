@@ -1,0 +1,26 @@
+<div class="xmppform">
+<h3>{{formdata.title}}</h3>
+<h4>{{formdata.instructions}}</h4>
+
+<form class="form-horizontal">
+  <div class="form-group" ng-repeat="field in formdata">
+    <label ng-if="!field.label" for="{{field.var}}" class="col-sm-4 control-label">{{field.var}}</label>
+    <label ng-if="field.label" for="{{field.var}}" class="col-sm-4 control-label">{{field.label}}</label>
+    <div class="col-sm-8">
+<input type="password" ng-model="field.value" ng-if="field.type=='text-private'" class="form-control"/>
+<input ng-model="field.value" ng-if="field.type=='text-single'" class="form-control"/>
+<input ng-model="field.value" ng-if="!field.type" class="form-control"/>
+<input type="checkbox" ng-model="field.value" ng-if="field.type=='boolean'" class="form-control"/>
+<select ng-model="field.value" ng-if="field.type=='list-single'"  class="form-control">
+<option  ng-repeat="item in field.options" value="{{item.value}}" ng-selected="field.value==item.value">{{item.label}}</option>
+</select>
+
+    </div>
+  </div>
+</form>
+
+<div>
+<button class="btn btn-default" ng-click="save()">save</button><a ui-sref="index"> <button class="btn btn-default" ng-click="close()">cancel</button></a>
+</div>
+</div>
+

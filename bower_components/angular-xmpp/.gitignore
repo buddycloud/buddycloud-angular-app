@@ -1,0 +1,6 @@
+*.sw*
+*~
+build/
+doc/
+node_modules/
+vendor/

@@ -1,0 +1,31 @@
+{
+  "name": "buddycloud.org",
+  "version": "0.0.1",
+  "description": "Demo at http://buddycloud.org",
+  "main": "index.html",
+  "keywords": [
+    "xmpp",
+    "buddycloud",
+    "websockets",
+    "social",
+    "media",
+    "chat",
+    "timeline",
+    "angular"
+  ],
+  "authors": [
+    "Bernhard Zwischenbrugger"
+  ],
+  "license": "MIT",
+  "homepage": "http://buddycloud.org",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-xmpp": "*"
+  }
+}

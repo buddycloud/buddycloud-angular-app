@@ -1,0 +1,106 @@
+buddycloud{
+    width:100%;
+    buddycloud-stream{
+        display:block;
+    }
+    .panel-heading{
+        background-color:white;
+        min-height:40px;
+        padding-top:5px;
+        padding-left:5px;
+        &:hover{
+            >div{
+                >.closebutton{
+                    display:block;
+                }
+            }
+
+        }
+    }
+    .panel-body{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding:0px;
+      padding-left:10px;
+      padding-right:10px;
+      p{
+        white-space: pre-line;
+      }
+      h4{
+        margin-top:3px;
+      }
+      img{
+        max-width:100%;
+      }
+      iframe{
+        border-width:0px;
+        max-width:100%;
+        width:480px;
+        height:300px;
+      }
+    }
+    .actionbutton{
+        width:100%;
+        margin:2px;
+    }
+    .avatar{
+            width:24px;
+            height:24px;
+            background-size:cover;
+            margin-right:10px;    
+    }
+    .avatar.big{
+        width:80px;
+        height:80px;
+        margin-left:-11px;    
+        padding:4px;
+        
+    }
+    .date{
+      color: rgb(128, 128, 128);
+      cursor: pointer;
+        margin-right:10px;
+    }
+    .author{
+      color: rgb(85, 85, 85);
+      font-weight:bold;
+    }
+    .owner{
+        margin:0px;
+    }
+    form{
+        display:inline;
+    }
+    textarea{
+        height:34px;
+        width:100%;
+        resize: vertical;
+        &.big{
+            min-height:100px !important;
+        }
+    }
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+
+
+
+}

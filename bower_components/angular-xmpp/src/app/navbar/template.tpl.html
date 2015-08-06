@@ -1,0 +1,53 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header pull-left" ng-click="setnode('recent')">
+      <a class="navbar-brand" ng-href><span class="hidden-xs"> Buddycloud</span></a>
+          <form class="nav navbar-form navbar-left hidden-xs" role="search">
+            <div class="form-group">
+                <buddycloudsearch onnodechange="setnode(node)"></buddycloudsearch>
+            </div>
+          </form>
+
+    </div>
+
+      <!-- I don't want it apart of the collapsible portion -->
+      <div class="navbar-right " style="float:right">
+          <ul class="nav ">
+            <li class="dropdown pull-right"  usermenu>Login</li>
+            <li class="dropdown pull-right" xmppfriendrequests></li>
+            <li class="dropdown pull-right" xmppnotifications onopenchat="openchat(jid)"></li>
+        </ul>
+      </div>
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+<!--
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+            <buddycloudsearch onnodechange="setnode(node)"></buddycloudsearch>
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown" xmppfriendrequests></li>
+        <li class="dropdown" xmppnotifications onopenchat="openchat(jid)"></li>
+        <li class="dropdown" usermenu>Login</li>
+        </ul>
+-->
+<!--
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown" xmppfriendrequests></li>
+        <li class="dropdown" xmppnotifications onopenchat="openchat(jid)"></li>
+        <li class="dropdown" usermenu>Login</li>
+        <li class="dropdown">
+          <a ng-href class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+            <div class="avatar" avatar="xmpp.data.me.jid"></div>
+            Login {{xmpp.data.me.jid.user}} <span class="caret"></span></a>
+            <div class="dropdown-menu" style="padding:17px;width:300px">
+                <xmpplogin defaultdomain="laos.buddycloud.com"></xmpplogin>
+            </div>
+        </li>
+-->
+  </div><!-- /.container-fluid -->
+</nav>

@@ -1,0 +1,19 @@
+<div class="dropdown"  dropdown>
+<span class="glyphicon glyphicon-plus-sign pull-right dropdown-toggle" aria-hidden="true" dropdown-toggle></span>
+<div dropdown-menu class="dropdown-menu" style="width:470px;padding:10px">
+<h3>Create Channel</h3>
+<xmppform formdata='form' onsave='save'></xmppform>
+</div>
+</div>
+<h5>Channels</h5>
+
+<div class="list-group">
+<div ng-repeat="item in bc.data.subscriptions track by item.node" class="nodelist" ng-class="{'active':item.node==bc.data.currentnode}">
+<div class="list dropdown-toggle avatar" size="16" ng-click="item.isOpen=true" role="button"  dropdown-toggle avatar="item.node" title="{{item.jid.user+'@'+item.jid.domain}}"></div>
+
+<a ng-href  class="item"  ng-click="opennode(item.node)">
+{{item.node|getUser}}
+</a>
+<span ng-if="bc.data.unread[item.node]" class="counter pull-right badge">{{bc.data.unread[item.node]}}</span>
+
+</div>
