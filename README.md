@@ -12,6 +12,12 @@ Configure webserver
 
 ```
 server {
+    listen 80;
+    server_name buddycloud.org;
+    rewrite ^ https://$server_name$request_uri? permanent;
+}
+
+server {
     listen                    443 ssl;
     server_name               buddycloud.org;
     ssl_certificate           /etc/certificates/buddycloud.org.complete.pem;
