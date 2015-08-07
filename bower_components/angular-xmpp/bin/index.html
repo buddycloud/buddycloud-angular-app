@@ -41,7 +41,9 @@ display:none;
 <p>loading...</p>
 </div>
 <div class="container-fluid" ng-cloak="">
-    <xmpp host="https://prod.buddycloud.com" 
+    <xmpp 
+xhost="http://localhost:3000" 
+host="https://prod.buddycloud.com" 
           defaultdomain="laos.buddycloud.com" >
         <buddycloud node="node" >
             <div ng-include="'navbar/template.tpl.html'"></div>
@@ -88,11 +90,11 @@ display:none;
 
     <!-- compiled CSS -->
     
-        <link rel="stylesheet" type="text/css" href="assets/angular-xmpp-0.0.3.css" />
+        <link rel="stylesheet" type="text/css" href="assets/angular-xmpp-0.0.9.css" />
         
     <!-- compiled JavaScript -->
     
-        <script type="text/javascript" src="assets/angular-xmpp-0.0.3.js"></script>
+        <script type="text/javascript" src="assets/angular-xmpp.js"></script>
         
 
 

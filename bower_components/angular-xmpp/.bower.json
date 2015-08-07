@@ -3,6 +3,7 @@
   "authors": [
     "bernhard zwischenbrgger"
   ],
+  "version": "0.0.11",
   "main": [
     "bin/index.html"
   ],
@@ -18,7 +19,7 @@
     "showdown": "~0.3.4",
     "jquery": "~2.1.3",
     "modernizr": "~2.8.3",
-    "angular-xmpp-services": "~0.9.18",
+    "angular-xmpp-services": "~0.9.34",
     "angular-moment": "~0.10.0",
     "ngInfiniteScroll": "~1.2.0",
     "angular-ui-router": "~0.2.13",
@@ -34,14 +35,13 @@
     "ng-file-upload": "~4.2.0"
   },
   "homepage": "https://github.com/robotnic/angular-xmpp",
-  "_release": "d5e7de3bc8",
+  "_release": "0.0.11",
   "_resolution": {
-    "type": "branch",
-    "branch": "master",
-    "commit": "d5e7de3bc8c8b691d29278173d7b81bb1970325f"
+    "type": "version",
+    "tag": "v0.0.11",
+    "commit": "970351a4935c0ac174243397070e8760004f1fdd"
   },
   "_source": "git://github.com/robotnic/angular-xmpp.git",
-  "_target": "*",
-  "_originalSource": "angular-xmpp",
-  "_direct": true
+  "_target": "v0.0.11",
+  "_originalSource": "angular-xmpp"
 }
