@@ -34,12 +34,15 @@
 [ng-cloak].container {
 display:none;
 }
+[ng-cloak].btn {
+display:none;
+}
     </style>
 </head>
 
 <body>
 <div class="splash" ng-cloak="">
-<img  src="assets/icons/buddycloud_icon.svg"/>
+<img  src="bower_components/angular-xmpp/bin/assets/icons/buddycloud_icon.svg"/>
 <p>loading...</p>
 </div>
 <div class="container-fluid" ng-cloak="">
@@ -57,8 +60,8 @@ display:none;
                     <div id="scrolltarget"> </div>
                     <buddycloud-stream class="col-md-8" onnodechange="setnode(node)" style="min-height:2000px"></buddycloud-stream>
                     <div class="col-md-2" ng-if="node!='recent'">
-                        <button ng-show="!showaffiliations" class="btn btn-xs btn-default" ng-click="showaffiliations=true">Show Affiliations</button>
-                        <button ng-show="showaffiliations" class="btn btn-xs btn-default" ng-click="showaffiliations=false">Hide Affiliations</button>
+                        <button ng-show="!showaffiliations" ng-cloak class="btn btn-xs btn-default" ng-click="showaffiliations=true">Show Affiliations</button>
+                        <button ng-show="showaffiliations" ng-cloak class="btn btn-xs btn-default" ng-click="showaffiliations=false">Hide Affiliations</button>
                         <buddycloud-affiliations ng-if="showaffiliations" onnodechange="setnode(node)" onopenchat="openchat(jid)"></buddycloud-affiliations>
                         <br/>
                         <buddycloud-invite></buddycloud-invite>
