@@ -26,6 +26,6 @@
     "tests"
   ],
   "dependencies": {
-    "angular-xmpp": "v0.0.16"
+    "angular-xmpp": "v0.0.17"
   }
 }
