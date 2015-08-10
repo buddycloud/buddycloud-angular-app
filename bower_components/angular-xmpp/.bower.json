@@ -3,7 +3,7 @@
   "authors": [
     "bernhard zwischenbrgger"
   ],
-  "version": "0.0.14",
+  "version": "0.0.15",
   "main": [
     "bin/index.html"
   ],
@@ -35,13 +35,13 @@
     "ng-file-upload": "~4.2.0"
   },
   "homepage": "https://github.com/robotnic/angular-xmpp",
-  "_release": "0.0.14",
+  "_release": "0.0.15",
   "_resolution": {
     "type": "version",
-    "tag": "v0.0.14",
-    "commit": "cf2fa544df44c3383fde76949676aaee076dae8b"
+    "tag": "v0.0.15",
+    "commit": "dff1dae9132273efd0d0cc0cf30f7d3e242b82f9"
   },
   "_source": "git://github.com/robotnic/angular-xmpp.git",
-  "_target": "v0.0.14",
+  "_target": "v0.0.15",
   "_originalSource": "angular-xmpp"
 }
