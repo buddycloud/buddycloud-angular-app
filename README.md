@@ -1,6 +1,8 @@
 # buddycloud-angular-app
 
-install
+Currently running on https://buddycloud.org
+
+## install
 
 ```
 git clone git@github.com:buddycloud/buddycloud-angular-app.git
