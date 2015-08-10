@@ -5,7 +5,7 @@ Currently running on https://buddycloud.org
 ## install
 
 ```
-git clone git@github.com:buddycloud/buddycloud-angular-app.git
+git clone https://github.com/buddycloud/buddycloud-angular-app.git
 cd buddycloud-angular-app
 chromium-browser index.html 
 ```
