@@ -4,14 +4,18 @@ Currently running on https://buddycloud.org
 
 ## install
 
+### run from your filesystem
+
+Buddycloud-angular-app should run just fine out of your local filesystem (pointed to the remote websocket).
 ```
 git clone https://github.com/buddycloud/buddycloud-angular-app.git
 cd buddycloud-angular-app
 chromium-browser index.html 
 ```
 
-Configure webserver
+### run from your webserver
 
+Here's a working config for Nginx
 ```
 server {
     listen 80;
