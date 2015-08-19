@@ -63,4 +63,4 @@ server {
 
 Client-Server Debug
 ----------
-![debug](https://raw.githubusercontent.com/buddycloud/buddycloud-angular-app/master/doc/debug.png)
+![debug](https://raw.githubusercontent.com/buddycloud/buddycloud-angular-app/master/doc/debug.png) 
