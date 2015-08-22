@@ -7,9 +7,9 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="manifest" href="manifest.json">
 
-    <title ng-if="chat.notifications.unreadmessages">({{chat.notifications.unreadmessages}}) Buddycloud</title>
-    <title ng-if="!chat.notifications.unreadmessages">Buddycloud</title>
+    <title ng-bind="({{chat.notifications.unreadmessages}}) Buddycloud">Buddycloud</title>
 <!--
+    <title ng-if="!chat.notifications.unreadmessages">Buddycloud</title>
     <link href="assets/css/markdown.css" rel="stylesheet"></link>
 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
