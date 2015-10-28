@@ -10,5 +10,5 @@
   xmpp-domain: 'laos.buddycloud.com',
   
   // Opengraph endpoint
-  opengraphendpoint: 'https://opengraph-parser.herokuapp.com'
+  opengraph-endpoint: 'https://opengraph-parser.herokuapp.com'
 };
