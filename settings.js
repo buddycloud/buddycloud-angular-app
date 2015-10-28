@@ -1,4 +1,4 @@
-define({
+{
   // Where to find your API server (defaults to the buddycloud dev server - set
   // to your own server.
   // Note: Browsers do not permit using self signed certificates for AJAX requests
@@ -11,4 +11,4 @@ define({
   
   // Opengraph endpoint
   opengraphendpoint: 'https://opengraph-parser.herokuapp.com'
-});
+};
